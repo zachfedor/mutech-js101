@@ -15,10 +15,8 @@ main {
   color: #337ab7;
 }
 
-.mono {
+h1 {
+  margin-bottom: 5vh;
   font-family: monospace;
 }
 
-h1 {
-  margin-bottom: 5vh;
-}

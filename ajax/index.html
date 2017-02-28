@@ -18,17 +18,31 @@
 <body>
   <main class="container">
     <article class="jumbotron">
-      <h1>click()</h1>
+      <h1>get()</h1>
 
-      <button id="clicker">click me!</button>
+      <div>-</div>
+
+      <button id="clicker">get data!</button>
     </article>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript">
+    function insertData(data) {
+      $('h1').text(data.title.rendered);
+      $('div').html(data.content.rendered);
+    }
+
+    function getData() {
+      $.get('http://demo.wp-api.org/wp-json/wp/v2/posts/470')
+        .done(function(data) {
+          insertData(data);
+        });
+    }
+
     $(document).ready(function() {
       $('#clicker').click(function() {
-        $('.jumbotron').toggleClass('warning');
+       getData();
       });
     });
   </script>
