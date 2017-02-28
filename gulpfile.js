@@ -4,14 +4,16 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
 const paths = {
-  htmlGlob: './**/*.html',
-  jsGlob: './**/*.js'
+  htmlGlob: './src/**/*.html',
+  jsGlob: './src/**/*.js'
 };
 
 
 gulp.task('serve', function() {
   browserSync.init({
-    server: true
+    server: {
+      baseDir: 'src',
+    }
   });
 
   gulp.watch(paths.htmlGlob).on('change', browserSync.reload);
