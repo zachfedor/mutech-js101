@@ -1,0 +1,16 @@
+main {
+  margin: 10vh 0;
+}
+
+.toc {
+  font-size: 2rem;
+}
+
+.toc a {
+  color: #333333;
+  font-family: monospace;
+}
+
+.toc a:hover {
+  color: #337ab7;
+}
