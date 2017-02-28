@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>JS 101</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="container">
+    <article class="jumbotron">
+      <h1 class="mono">$(document).ready()</h1>
+
+      <p id="text">
+        Here is some text you won't see for long
+      </p>
+
+    </article>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#text').text("Hello MU Tech!");
+    });
+  </script>
+</body>
+</html>
+

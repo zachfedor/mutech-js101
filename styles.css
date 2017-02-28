@@ -14,3 +14,11 @@ main {
 .toc a:hover {
   color: #337ab7;
 }
+
+.mono {
+  font-family: monospace;
+}
+
+h1 {
+  margin-bottom: 5vh;
+}

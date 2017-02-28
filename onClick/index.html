@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>JS 101</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .warning {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="jumbotron">
+      <h1 class="mono">click()</h1>
+
+      <button id="clicker">click me!</button>
+    </article>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#clicker').click(function() {
+        $('.jumbotron').toggleClass('warning');
+      });
+    });
+  </script>
+</body>
+</html>
+
